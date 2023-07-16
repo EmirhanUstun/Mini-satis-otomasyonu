@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    tools:context=".OdemeEkrani" >
+
+    <Button
+        android:id="@+id/btnOde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="279dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/sepet"
+        android:text="ÖDE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="150dp"
+        android:text="Ödeme "
+        android:textColor="@color/sepet"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="319dp"
+        android:text="Kart Üzerindeki İsim"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_isim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="169dp"
+        android:maxLength="50"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="320dp"
+        android:text="Kart No"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_isim" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="198dp"
+        android:text="Son Kullanma Tarihi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_isim" />
+
+    <EditText
+        android:id="@+id/edt_ay"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="date"
+        android:maxLength="2"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="298dp"
+        android:text="CVC2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_ay" />
+
+    <EditText
+        android:id="@+id/edt_cvc2"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="170dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <EditText
+        android:id="@+id/edt_yil"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="216dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="164dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_isim"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        app:srcCompat="@drawable/ic_credit_card" />
+
+    <EditText
+        android:id="@+id/edt_no_1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:maxLength="4"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView58"
+        app:layout_constraintEnd_toStartOf="@+id/edt_no_2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_no_3"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:maxLength="4"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView58"
+        app:layout_constraintEnd_toStartOf="@+id/edt_no_4"
+        app:layout_constraintStart_toEndOf="@+id/edt_no_2" />
+
+    <EditText
+        android:id="@+id/edt_no_4"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="20dp"
+        android:maxLength="4"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView58"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/edt_no_3" />
+
+    <EditText
+        android:id="@+id/edt_no_2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:maxLength="4"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView58"
+        app:layout_constraintEnd_toStartOf="@+id/edt_no_3"
+        app:layout_constraintStart_toEndOf="@+id/edt_no_1" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:text="/"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/edt_ay"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <TextView
+        android:id="@+id/txtCVC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="194dp"
+        android:text="CVC2 Nedir?"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/edt_cvc2"
+        app:layout_constraintTop_toBottomOf="@+id/edt_yil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
